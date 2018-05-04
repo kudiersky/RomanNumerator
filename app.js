@@ -74,12 +74,23 @@ romanNumeral: 'm'
 ]
 
 
-//We said we want to intterate over our array from largest to smalles. Taking off that value and restarting the process.
-//Let's flip that array
-
 var romanNumeralsArrayFlipped = romanNumeralsArray.slice(0).reverse();
 
-console.log(romanNumeralsArrayFlipped)
+//now we can utilise a FOR Loop
 
+let value = 123
 
-// thanks to Dwayne @ https://ilikekillnerds.com/2017/03/efficiently-looping-javascript-array-backwards/
+for (i = 0; i < romanNumeralsArrayFlipped.length; i++) {
+     if (value/romanNumeralsArrayFlipped[i].decimal >= 1){
+       value -= romanNumeralsArrayFlipped[i].decimal
+       console.log(value)
+       break
+     }
+}
+
+//Output
+
+// 23
+
+//We can see here like we discussed that we started with 123, we took 100 off it. We must re-itterate
+//To recheck the value
