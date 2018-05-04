@@ -40,7 +40,7 @@ romanNumeral: 'ix'
 {
 decimal: 10,
 romanNumeral: 'x'
-}
+},
 {
 decimal: 50,
 romanNumeral: 'l'
@@ -72,3 +72,14 @@ decimal: 1000,
 romanNumeral: 'm'
 }
 ]
+
+
+//We said we want to intterate over our array from largest to smalles. Taking off that value and restarting the process.
+//Let's flip that array
+
+var romanNumeralsArrayFlipped = romanNumeralsArray.slice(0).reverse();
+
+console.log(romanNumeralsArrayFlipped)
+
+
+// thanks to Dwayne @ https://ilikekillnerds.com/2017/03/efficiently-looping-javascript-array-backwards/
