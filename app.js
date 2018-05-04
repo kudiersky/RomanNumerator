@@ -39,15 +39,21 @@ romanNumeral: 'viii'
 }
 ]
 
-//for now lets remove the need to read back the decimal
+//Let's and an IF statement to constrain in to between 1 and 10 for now and give an error message if not
 
 function decimalToRomanNumeral(decimal){
-let obj = romanNumeralsArray.find(object => object.decimal === decimal);
-return obj.romanNumeral //return a object value
+
+if(decimal > 0 && decimal < 10 && decimal!==null){
+  let obj = romanNumeralsArray.find(object => object.decimal === decimal);
+  return obj.romanNumeral //return a object value
+  }
+    else{
+      return `We can't convert this value yet please enter a number between 1 and  10`
+    }
 }
 
 // expected output v
-let result = decimalToRomanNumeral(5)
+let result = decimalToRomanNumeral(0)
 console.log(result)
 
 //result
