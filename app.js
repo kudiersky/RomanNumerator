@@ -43,12 +43,12 @@ romanNumeral: 'viii'
 
 function decimalToRomanNumeral(decimal){
 let obj = romanNumeralsArray.find(object => object.decimal === decimal);
-return obj.romanNumeral
+return obj.romanNumeral //return a object value
 }
 
-// expected output { decimal: 5, romanNumeral: 'v' }
+// expected output v
 let result = decimalToRomanNumeral(5)
 console.log(result)
 
 //result
-//{ decimal: 5, romanNumeral: 'v' }
+//v
