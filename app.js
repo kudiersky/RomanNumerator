@@ -42,6 +42,10 @@ decimal: 10,
 romanNumeral: 'x'
 },
 {
+decimal: 40,
+romanNumeral: 'xl'
+},
+{
 decimal: 50,
 romanNumeral: 'l'
 },
@@ -83,11 +87,8 @@ function RomanNumerate(value){                                            //take
   for (i = 0; i < romanNumeralsArrayFlipped.length; i++) {                //We are itterateing over the length of the array
        if (value/romanNumeralsArrayFlipped[i].decimal >= 1){              //If we can divide the value by the array item returning a value of 1 or above
          value -= romanNumeralsArrayFlipped[i].decimal                    //We take it off
-         string += romanNumeralsArrayFlipped[i].romanNumeral              //add the roman numerals to a string                                                                        
+         string += romanNumeralsArrayFlipped[i].romanNumeral              //add the roman numerals to a string
+         RomanNumerate(value)
         }
       }
     }
-
-
-RomanNumerate(432)
-console.log(string)
