@@ -39,27 +39,17 @@ romanNumeral: 'viii'
 }
 ]
 
-// lets build a the first function hardcoding the parameter
+// lets wrap this up in a function.
+//factoring in the parameter
 
-//search through the array to find the object with the decimal value of number (8)
+function decimalToRomanNumeral(decimal){
+let obj = romanNumeralsArray.find(object => object.decimal === decimal);
+return obj
+}
 
-let obj = romanNumeralsArray.find(object => object.decimal === 8);
-
-// expected output decimal: 8 romanNumeral: 'vii'
-
-console.log(obj);
-
-//result
-//{ decimal: 8, romanNumeral: 'vii' }
-
-let obj = romanNumeralsArray.find(object => object.decimal === 2);
-
-// expected output decimal: 8 romanNumeral: 'vii'
-
-console.log(obj);
+// expected output { decimal: 5, romanNumeral: 'v' }
+let result = decimalToRomanNumeral(5)
+console.log(result)
 
 //result
-//{ decimal: 2, romanNumeral: 'ii' }
-
-
-//great, that's worked
+//{ decimal: 5, romanNumeral: 'v' }
