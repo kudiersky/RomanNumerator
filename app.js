@@ -48,13 +48,14 @@ if(decimal > 0 && decimal < 10 && decimal!==null){
   return obj.romanNumeral //return a object value
   }
     else{
-      return `We can't convert this value yet please enter a number between 1 and  10`
+      return `We cannot convert ${decimal} to Roman Numerals yet, please enter a number between 1 and  10`
     }
 }
 
-// expected output v
-let result = decimalToRomanNumeral(0)
-console.log(result)
+//A quick test to check our function mapping the values
 
-//result
-//v
+values = [0, 4 , 10,'string', 123, 1 , 2, 3]
+
+let results = values.map(decimalToRomanNumeral)
+
+console.log(results)
