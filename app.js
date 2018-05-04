@@ -39,12 +39,11 @@ romanNumeral: 'viii'
 }
 ]
 
-// lets wrap this up in a function.
-//factoring in the parameter
+//for now lets remove the need to read back the decimal
 
 function decimalToRomanNumeral(decimal){
 let obj = romanNumeralsArray.find(object => object.decimal === decimal);
-return obj
+return obj.romanNumeral
 }
 
 // expected output { decimal: 5, romanNumeral: 'v' }
