@@ -39,20 +39,27 @@ romanNumeral: 'viii'
 }
 ]
 
-// lets build a function in sudo code
+// lets build a the first function hardcoding the parameter
+
+//search through the array to find the object with the decimal value of number (8)
+
+let obj = romanNumeralsArray.find(object => object.decimal === 8);
+
+// expected output decimal: 8 romanNumeral: 'vii'
+
+console.log(obj);
+
+//result
+//{ decimal: 8, romanNumeral: 'vii' }
+
+let obj = romanNumeralsArray.find(object => object.decimal === 2);
+
+// expected output decimal: 8 romanNumeral: 'vii'
+
+console.log(obj);
+
+//result
+//{ decimal: 2, romanNumeral: 'ii' }
 
 
-//1. pass in a number 1-9
-//e.g. 4
-
-//2. compare parameter against object key (decimal) value
-// decimal :4
-//romanNumeral: 'iv'
-
-
-//3. return object object key (romanNumeral) value
-// decimal :4
-//romanNumeral: 'iv'
-
-//4. print to console romanNumeral value.
-//'iv'
+//great, that's worked
