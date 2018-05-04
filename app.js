@@ -1,58 +1,58 @@
-//first lets make an array of Decimal and Roman Numerals of 1 - 9
+//Below we have our array of Objects of 1 to 9.
 
-const RomanNumeralsArray = [
+const romanNumeralsArray = [
 {
 decimal: 1,
-RomanNumeral: 'i'
+romanNumeral: 'i'
 },
 {
 decimal: 2,
-RomanNumeral: 'ii'
+romanNumeral: 'ii'
 },
 {
 decimal: 3,
-RomanNumeral: 'iii'
+romanNumeral: 'iii'
 },
 {
 decimal: 4,
-RomanNumeral: 'iv'
+romanNumeral: 'iv'
 },
 {
 decimal: 5,
-RomanNumeral: 'v'
+romanNumeral: 'v'
 },
 {
 decimal: 6,
-RomanNumeral: 'vi'
+romanNumeral: 'vi'
 },
 {
 decimal: 7,
-RomanNumeral: 'vii'
+romanNumeral: 'vii'
 },
 {
 decimal: 8,
-RomanNumeral: 'vii'
+romanNumeral: 'vii'
 },
 {
 decimal: 9,
-RomanNumeral: 'viii'
+romanNumeral: 'viii'
 }
 ]
 
-//lets print to console what we have.
+// lets build a function in sudo code
 
-RomanNumeralsArray.forEach(function(element) {
-  console.log(element);
-});
 
-//result
+//1. pass in a number 1-9
+//e.g. 4
 
-// { decimal: 1, RomanNumeral: 'i' }
-// { decimal: 2, RomanNumeral: 'ii' }
-// { decimal: 3, RomanNumeral: 'iii' }
-// { decimal: 4, RomanNumeral: 'iv' }
-// { decimal: 5, RomanNumeral: 'v' }
-// { decimal: 6, RomanNumeral: 'vi' }
-// { decimal: 7, RomanNumeral: 'vii' }
-// { decimal: 8, RomanNumeral: 'vii' }
-// { decimal: 9, RomanNumeral: 'viii' }
+//2. compare parameter against object key (decimal) value
+// decimal :4
+//romanNumeral: 'iv'
+
+
+//3. return object object key (romanNumeral) value
+// decimal :4
+//romanNumeral: 'iv'
+
+//4. print to console romanNumeral value.
+//'iv'
