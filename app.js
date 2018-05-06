@@ -83,6 +83,22 @@ let string =''                                                            //buil
 
 function RomanNumerate(value){                                            //take in the value as a parameter
 
+try{
+  if(value < 1){
+    throw 'too small'
+  }
+  else if(value > 3999){
+    throw 'too big'
+  }
+  else if(value > 3999){
+    throw 'too big'
+  }
+  else if(value == ""){
+    throw "empty"
+  }
+  else if(isNaN(value)){
+    throw "not a number";
+  }
 
   for (i = 0; i < romanNumeralsArrayFlipped.length; i++) {                //We are itterateing over the length of the array
        if (value/romanNumeralsArrayFlipped[i].decimal >= 1){              //If we can divide the value by the array item returning a value of 1 or above
@@ -92,6 +108,7 @@ function RomanNumerate(value){                                            //take
         }
       }
     }
-
-RomanNumerate(4949)
-console.log(string)
+      catch(e){
+        console.log(e)
+      }
+    }
