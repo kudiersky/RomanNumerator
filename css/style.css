@@ -76,6 +76,7 @@ width: 100%;
 
 .input-box{
 margin:1em;
+text-align: center; 
 }
 
 p.speech {

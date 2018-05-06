@@ -78,26 +78,23 @@ romanNumeral: 'm'
 ]
 
 
-var romanNumeralsArrayFlipped = romanNumeralsArray.slice(0).reverse();    //We flipped the array
+
+//////////////////////////////////////////////////////////////////////////////////
+const button = document.getElementById("generate")
+const romanNumeralsArrayFlipped = romanNumeralsArray.slice(0).reverse()   //We flipped the array
 let string =''                                                            //build the string to return roman numerals
 
 function RomanNumerate(value){                                            //take in the value as a parameter
 
 try{
-  if(value < 1){
-    throw 'too small'
+ if(value > 3999){                                                   //thow is too big
+    throw "This number is too big"
   }
-  else if(value > 3999){
-    throw 'too big'
+  else if(value == ""){                                                   //throw if blank
+    throw "Nothing entered"
   }
-  else if(value > 3999){
-    throw 'too big'
-  }
-  else if(value == ""){
-    throw "empty"
-  }
-  else if(isNaN(value)){
-    throw "not a number";
+  else if(isNaN(value)){                                                  //throw uf undefined
+    throw "This is not a number";
   }
 
   for (i = 0; i < romanNumeralsArrayFlipped.length; i++) {                //We are itterateing over the length of the array
@@ -107,8 +104,23 @@ try{
          RomanNumerate(value)
         }
       }
+      return string                                                       //return string of RN
     }
       catch(e){
-        console.log(e)
+        return e
       }
     }
+
+    //////////////////////////////////////code to add to site //////////////////////////////////////////////////////////////////////////
+
+    function populateHTML() {
+      let decimal = $('input.input-box').val()
+      let message = RomanNumerate(decimal)
+      let messageHTML = `<h1>${message}</h1>`
+      console.log(messageHTML)
+      $('#results h1').replaceWith(messageHTML)
+      $('input.input-box').val('')
+      string="";
+    }
+
+button.onclick = populateHTML
