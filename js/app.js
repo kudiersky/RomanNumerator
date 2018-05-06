@@ -3,77 +3,77 @@
 const romanNumeralsArray = [
 {
 decimal: 1,
-romanNumeral: 'i'
+romanNumeral: 'I'
 },
 {
 decimal: 2,
-romanNumeral: 'ii'
+romanNumeral: 'II'
 },
 {
 decimal: 3,
-romanNumeral: 'iii'
+romanNumeral: 'III'
 },
 {
 decimal: 4,
-romanNumeral: 'iv'
+romanNumeral: 'IV'
 },
 {
 decimal: 5,
-romanNumeral: 'v'
+romanNumeral: 'V'
 },
 {
 decimal: 6,
-romanNumeral: 'vi'
+romanNumeral: 'VI'
 },
 {
 decimal: 7,
-romanNumeral: 'vii'
+romanNumeral: 'VII'
 },
 {
 decimal: 8,
-romanNumeral: 'viii'
+romanNumeral: 'VIII'
 },
 {
 decimal: 9,
-romanNumeral: 'ix'
+romanNumeral: 'IX'
 },
 {
 decimal: 10,
-romanNumeral: 'x'
+romanNumeral: 'X'
 },
 {
 decimal: 40,
-romanNumeral: 'xl'
+romanNumeral: 'XL'
 },
 {
 decimal: 50,
-romanNumeral: 'l'
+romanNumeral: 'L'
 },
 {
 decimal: 90,
-romanNumeral: 'xc'
+romanNumeral: 'XC'
 },
 {
 decimal: 100,
-romanNumeral: 'c'
+romanNumeral: 'C'
 },
 {
 decimal: 400,
-romanNumeral: 'cd'
+romanNumeral: 'CD'
 },
 {
 decimal: 500,
-romanNumeral: 'd'
+romanNumeral: 'D'
 }
 ,
 {
 decimal: 900,
-romanNumeral: 'cm'
+romanNumeral: 'CM'
 }
 ,
 {
 decimal: 1000,
-romanNumeral: 'm'
+romanNumeral: 'M'
 }
 ]
 
