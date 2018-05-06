@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+body {
+     background: #8ACBCD;
+     font-family: "Montserrat", sans-serif;
+     min-width:1000px;        /* Suppose you want minimum width of 1000px */
+     width: auto !important;  /* Firefox will set width as auto */
+      }
+
+h1 {
+     font-family: "Montserrat", sans-serif;
+     line-height: 1;
+     display:inline;
+     margin-top: 0.75em;
+     color:#fced96;
+ text-shadow: -1px 0 #7b6b4f,
+ 0 1px #7b6b4f,
+ 3px 0 #7b6b4f
+ , 0 -1px #7b6b4f;
+     font-size:50px;
+     text-align:center;
+     display:inline-block;
+     position:relative;
+     width:100%;
+}
+
+h2 {
+     font-family: "Montserrat", sans-serif;
+     line-height: 1;
+     display:inline;
+     margin-top: 0.75em;
+     color:#fced96;
+ text-shadow: -1px 0 #7b6b4f,
+ 0 1px #7b6b4f,
+ 3px 0 #7b6b4f
+ , 0 -1px #7b6b4f;
+     font-size:20px;
+     text-align:center;
+     display:inline-block;
+     position:relative;
+     width:100%;
+}
+
+
+#header {
+    width: 100%;
+    background-color: #8ACBCD;
+    height: 8em;
+}
+
+#container {
+    width: 50em;
+    background-color: #8ACBCD;
+    margin: auto;
+}
+#first {
+    width: 25em;
+    float: left;
+    height: 25em;
+        background-color: #8ACBCD;
+}
+#second {
+    width: 25em;
+    float: right;
+    height: 25em;
+    background-color: #8ACBCD;
+}
+#clear {
+    clear: both;
+}
+
+#character-image{
+height: 100%;
+width: 100%;
+}
+
+.input-box{
+margin:1em;
+}
+
+p.speech {
+  position: relative;
+  width: 90%;
+  height: 100px;
+  text-align: center;
+  line-height: 1.4em;
+  background-color: #FFFACD;
+  border: 8px solid #7b6b4f;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+  padding: 0.4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+}
+
+input[type=number] {
+    border: 1px solid #888;
+    border-radius: 4px;
+}
+
+.button {
+    background: #D8552F;
+    color: #ffff;
+    margin-left: 9.3em;
+    border-radius: 4px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    -webkit-transition: 0.25s ease;
+    transition: 0.25s ease;
+}
+.button:hover {
+    background-color:	#F8D859;
+    color: white;
+}

@@ -95,3 +95,16 @@ function RomanNumerate(value){                                            //take
 
 RomanNumerate(4949)
 console.log(string)
+
+
+
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    document.getElementById('footer').innerHTML =
+    `<h2>${h} : ${m}</h2>`
+    var t = setTimeout(startTime, 60000);
+}
+
+startTime()
