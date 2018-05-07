@@ -80,8 +80,8 @@ romanNumeral: 'M'
 
 
 //////////////////////////////////////////////////////////////////////////////////
-const button = document.getElementById("generate")
-const romanNumeralsArrayFlipped = romanNumeralsArray.slice(0).reverse()   //We flipped the array
+// const button = document.getElementById("generate")
+// const romanNumeralsArrayFlipped = romanNumeralsArray.slice(0).reverse()   //We flipped the array
 let string =''                                                            //build the string to return roman numerals
 
 function RomanNumerate(value){                                            //take in the value as a parameter
@@ -117,16 +117,17 @@ try{
       }
     }
 
+module.exports = RomanNumerate;
     //////////////////////////////////////code to add to site //////////////////////////////////////////////////////////////////////////
-
-    function populateHTML() {
-      let decimal = $('input.input-box').val()
-      let message = RomanNumerate(decimal)
-      let messageHTML = `<h1>${message}</h1>`
-      console.log(messageHTML)
-      $('#results h1').replaceWith(messageHTML)
-      $('input.input-box').val('')
-      string="";
-    }
-
-button.onclick = populateHTML
+//
+//     function populateHTML() {
+//       let decimal = $('input.input-box').val()
+//       let message = RomanNumerate(decimal)
+//       let messageHTML = `<h1>${message}</h1>`
+//       console.log(messageHTML)
+//       $('#results h1').replaceWith(messageHTML)
+//       $('input.input-box').val('')
+//       string="";
+//     }
+//
+// button.onclick = populateHTML
