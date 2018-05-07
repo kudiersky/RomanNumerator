@@ -96,12 +96,6 @@ try{
   else if(isNaN(value)){                                                  //throw uf undefined
     throw "This is not a number";
   }
-  else if(value % 1 !== 0){                                                  //throw uf not whole
-    throw "This is not a whole number";
-  }
-  else if(value < 1){                                                   //throw if blank
-    throw "This is too small"
-  }
 
   for (i = 0; i < romanNumeralsArrayFlipped.length; i++) {                //We are itterateing over the length of the array
        if (value/romanNumeralsArrayFlipped[i].decimal >= 1){              //If we can divide the value by the array item returning a value of 1 or above
